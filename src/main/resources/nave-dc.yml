@@ -1,0 +1,12 @@
+version: '2.2'
+services:     
+  nave:
+    image: naves-1.0.0.jar:latest
+    container_name: naves-1.0.0
+    networks:
+      - network
+    ports:
+      - 8185:8185
+      
+networks:
+  network:

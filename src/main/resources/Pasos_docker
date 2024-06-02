@@ -1,0 +1,11 @@
+1. Construir imagen con el jar y el Dockerfile
+
+docker build -t naves-1.0.0.jar . 
+
+2. Iniciar contenedor docker con fichero docker compose
+
+docker-compose -f nave-dc.yml up -d
+
+3. Consultar logs
+
+docker logs -f identificadorContenedor

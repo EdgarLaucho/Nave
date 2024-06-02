@@ -1,0 +1,11 @@
+com.naves.api.navetest
+com.world2meet.naves.api
+com.world2meet.naves.api.aspect
+com.world2meet.naves.api.controller
+com.world2meet.naves.api.dto
+com.world2meet.naves.api.entity
+com.world2meet.naves.api.exception
+com.world2meet.naves.api.repository
+com.world2meet.naves.api.response
+com.world2meet.naves.api.service
+com.world2meet.naves.api.service.implement

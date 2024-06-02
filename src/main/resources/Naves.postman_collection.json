@@ -1,0 +1,936 @@
+{
+	"info": {
+		"_postman_id": "03756c3f-6dec-496f-a8b4-16ab31259654",
+		"name": "Naves",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13483464",
+		"_collection_link": "https://dark-equinox-439464.postman.co/workspace/My-Workspace~76263564-a6d0-419c-89c4-0790d222463e/collection/13483464-03756c3f-6dec-496f-a8b4-16ab31259654?action=share&source=collection_link&creator=13483464"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "nave",
+					"item": [
+						{
+							"name": "actualizar",
+							"item": [
+								{
+									"name": "Método que actualizar una nave por el identificador.",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/nave/actualizar",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"nave",
+												"actualizar"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No existe el parametro.",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/actualizar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"actualizar"
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+										},
+										{
+											"name": "Información duplicada.",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/actualizar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"actualizar"
+													]
+												}
+											},
+											"status": "Conflict",
+											"code": 409,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+										},
+										{
+											"name": "Ha ocurrido un error interno en el servidor.",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/actualizar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"actualizar"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "guardar",
+							"item": [
+								{
+									"name": "Método que guarda una nave en base de datos.",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/nave/guardar",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"nave",
+												"guardar"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Petición exitosa.",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/guardar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"guardar"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+										},
+										{
+											"name": "Información duplicada.",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/guardar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"guardar"
+													]
+												}
+											},
+											"status": "Conflict",
+											"code": 409,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+										},
+										{
+											"name": "Ha ocurrido un error interno en el servidor.",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/guardar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"guardar"
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "obtener-listado",
+							"item": [
+								{
+									"name": "Metodo que lista las naves existentes paginadas",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/nave/obtener-listado?numeroPagina=0&tamano=8",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"nave",
+												"obtener-listado"
+											],
+											"query": [
+												{
+													"key": "numeroPagina",
+													"value": "0",
+													"description": "Parametro opcional indica el numero de pagina que se esta consultando"
+												},
+												{
+													"key": "tamano",
+													"value": "8",
+													"description": "Cantidad de naves a recibir por hoja"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Ha ocurrido un error interno en el servidor.",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/obtener-listado?numeroPagina=0&tamano=8",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"obtener-listado"
+													],
+													"query": [
+														{
+															"key": "numeroPagina",
+															"value": "0",
+															"description": "Parametro opcional indica el numero de pagina que se esta consultando"
+														},
+														{
+															"key": "tamano",
+															"value": "8",
+															"description": "Cantidad de naves a recibir por hoja"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"totalPages\": \"<integer>\",\n  \"totalElements\": \"<long>\",\n  \"size\": \"<integer>\",\n  \"content\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"<string>\",\n      \"obra\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"<string>\",\n      \"obra\": \"<string>\"\n    }\n  ],\n  \"number\": \"<integer>\",\n  \"sort\": {\n    \"empty\": \"<boolean>\",\n    \"sorted\": \"<boolean>\",\n    \"unsorted\": \"<boolean>\"\n  },\n  \"first\": \"<boolean>\",\n  \"last\": \"<boolean>\",\n  \"numberOfElements\": \"<integer>\",\n  \"pageable\": {\n    \"offset\": \"<long>\",\n    \"sort\": {\n      \"empty\": \"<boolean>\",\n      \"sorted\": \"<boolean>\",\n      \"unsorted\": \"<boolean>\"\n    },\n    \"paged\": \"<boolean>\",\n    \"pageNumber\": \"<integer>\",\n    \"pageSize\": \"<integer>\",\n    \"unpaged\": \"<boolean>\"\n  },\n  \"empty\": \"<boolean>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "buscar-por-nombre",
+							"item": [
+								{
+									"name": "{nombre}",
+									"item": [
+										{
+											"name": "Metodo que realiza la busqueda de naves por nombre paginadas.",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/buscar-por-nombre/:nombre?numeroPagina=0&tamano=8",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"buscar-por-nombre",
+														":nombre"
+													],
+													"query": [
+														{
+															"key": "numeroPagina",
+															"value": "0",
+															"description": "Parametro opcional ndica el numero de pagina que se esta consultando."
+														},
+														{
+															"key": "tamano",
+															"value": "8",
+															"description": "Parametro opcional indica el total de registro por pagina."
+														}
+													],
+													"variable": [
+														{
+															"key": "nombre",
+															"value": "<string>",
+															"description": "(Required) Nombre a para buscar la nave."
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "No existe el parametro.",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/nave/buscar-por-nombre/:nombre?numeroPagina=0&tamano=8",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"nave",
+																"buscar-por-nombre",
+																":nombre"
+															],
+															"query": [
+																{
+																	"key": "numeroPagina",
+																	"value": "0",
+																	"description": "Parametro opcional ndica el numero de pagina que se esta consultando."
+																},
+																{
+																	"key": "tamano",
+																	"value": "8",
+																	"description": "Parametro opcional indica el total de registro por pagina."
+																}
+															],
+															"variable": [
+																{
+																	"key": "nombre"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"totalPages\": \"<integer>\",\n  \"totalElements\": \"<long>\",\n  \"size\": \"<integer>\",\n  \"content\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"<string>\",\n      \"obra\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"<string>\",\n      \"obra\": \"<string>\"\n    }\n  ],\n  \"number\": \"<integer>\",\n  \"sort\": {\n    \"empty\": \"<boolean>\",\n    \"sorted\": \"<boolean>\",\n    \"unsorted\": \"<boolean>\"\n  },\n  \"first\": \"<boolean>\",\n  \"last\": \"<boolean>\",\n  \"numberOfElements\": \"<integer>\",\n  \"pageable\": {\n    \"offset\": \"<long>\",\n    \"sort\": {\n      \"empty\": \"<boolean>\",\n      \"sorted\": \"<boolean>\",\n      \"unsorted\": \"<boolean>\"\n    },\n    \"paged\": \"<boolean>\",\n    \"pageNumber\": \"<integer>\",\n    \"pageSize\": \"<integer>\",\n    \"unpaged\": \"<boolean>\"\n  },\n  \"empty\": \"<boolean>\"\n}"
+												},
+												{
+													"name": "Ha ocurrido un error interno en el servidor.",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/nave/buscar-por-nombre/:nombre?numeroPagina=0&tamano=8",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"nave",
+																"buscar-por-nombre",
+																":nombre"
+															],
+															"query": [
+																{
+																	"key": "numeroPagina",
+																	"value": "0",
+																	"description": "Parametro opcional ndica el numero de pagina que se esta consultando."
+																},
+																{
+																	"key": "tamano",
+																	"value": "8",
+																	"description": "Parametro opcional indica el total de registro por pagina."
+																}
+															],
+															"variable": [
+																{
+																	"key": "nombre"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"totalPages\": \"<integer>\",\n  \"totalElements\": \"<long>\",\n  \"size\": \"<integer>\",\n  \"content\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"<string>\",\n      \"obra\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"<string>\",\n      \"obra\": \"<string>\"\n    }\n  ],\n  \"number\": \"<integer>\",\n  \"sort\": {\n    \"empty\": \"<boolean>\",\n    \"sorted\": \"<boolean>\",\n    \"unsorted\": \"<boolean>\"\n  },\n  \"first\": \"<boolean>\",\n  \"last\": \"<boolean>\",\n  \"numberOfElements\": \"<integer>\",\n  \"pageable\": {\n    \"offset\": \"<long>\",\n    \"sort\": {\n      \"empty\": \"<boolean>\",\n      \"sorted\": \"<boolean>\",\n      \"unsorted\": \"<boolean>\"\n    },\n    \"paged\": \"<boolean>\",\n    \"pageNumber\": \"<integer>\",\n    \"pageSize\": \"<integer>\",\n    \"unpaged\": \"<boolean>\"\n  },\n  \"empty\": \"<boolean>\"\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "buscar-por-identificador",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "Método que obtiene  la nave por su identificador.",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/buscar-por-identificador/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"buscar-por-identificador",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<long>",
+															"description": "(Required) Identificador para la busqueda de la nave."
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "No existe el parametro.",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/nave/buscar-por-identificador/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"nave",
+																"buscar-por-identificador",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+												},
+												{
+													"name": "Ha ocurrido un error interno en el servidor.",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/nave/buscar-por-identificador/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"nave",
+																"buscar-por-identificador",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"nombre\": \"<string>\",\n  \"obra\": \"<string>\",\n  \"id\": \"<long>\"\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "borrar",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "Método que borra una nave por el identificador.",
+											"request": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/nave/borrar/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"nave",
+														"borrar",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<long>",
+															"description": "(Required) Identificador para la busqueda de la nave."
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "No existe el parametro.",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/nave/borrar/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"nave",
+																"borrar",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{}"
+												},
+												{
+													"name": "Información duplicada.",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/nave/borrar/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"nave",
+																"borrar",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Conflict",
+													"code": 409,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{}"
+												},
+												{
+													"name": "Ha ocurrido un error interno en el servidor.",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/nave/borrar/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"nave",
+																"borrar",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{}"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8185"
+		}
+	]
+}
