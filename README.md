@@ -16,7 +16,7 @@ Se realizan las siguientes actividades:
 Se agregan trazas y se crea fichero logback.xml.
 - Se utilizo el plugin de SonarLint para solucionar code smell.
 - Documentación de la api: Se realiza documentación  con swagger [URL](http://localhost:8185/swagger-ui/index.html#) y javadoc en el código.
-- Se crea collection de postman: [URL](https://github.com/EdgarLaucho/naves/blob/develop/src/main/resources/Naves.postman_collection.json)  
+- Se crea collection de postman: [URL](https://github.com/EdgarLaucho/Nave/blob/main/src/main/resources/Naves.postman_collection.json)  
 - Docker: Se crea fichero Dockerfile y docker-compose nave-dc.yml:
 ```sh
 Construir imagen con el jar y el Dockerfile
